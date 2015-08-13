@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Install Referrer Tester</string>
+    <string name="action_settings">Settings</string>
+    <string name="referrerData">Referrer Data</string>
+    <string name="targetApplication">Target Application</string>
+    <string name="urlEncoded">URL Encoded</string>
+    <string name="send">Send</string>
+    <string name="intentHasBeenSent">INSTALL_REFERRER intent has been sent</string>
+</resources>

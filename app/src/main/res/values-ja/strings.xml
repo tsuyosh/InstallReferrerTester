@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="referrerData">Referrerデータ</string>
+    <string name="targetApplication">送信先アプリケーション</string>
+    <string name="urlEncoded">URLエンコードする</string>
+    <string name="send">送信</string>
+    <string name="intentHasBeenSent">INSTALL_REFERRERインテントを送信しました</string>
+    <string name="action_settings">設定</string>
+    <string name="app_name">Install Referrer Tester</string>
+    <string name="hello_world"></string>
+</resources>
