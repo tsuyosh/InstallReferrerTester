@@ -1,0 +1,18 @@
+machine:
+  environment:
+    ANDROID_HOME: /usr/local/android-sdk-linux
+
+dependencies:
+  pre:
+    - echo y | android update sdk --no-ui --all --filter "extra-android-m2repository"
+
+test:
+  pre:
+    - emulator -avd circleci-android22 -no-audio -no-window:
+      background: true
+      parallel: true
+    - circle-android wait-for-boot
+  override:
+    - ./gradlew connectedAndroidTest
+    - cp -r app/build/outputs $CIRCLE_ARTIFACTS
+    - cp -r app/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
